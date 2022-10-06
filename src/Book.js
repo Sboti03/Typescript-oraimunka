@@ -26,7 +26,13 @@ class Book {
         }
     }
     toString() {
-        return "Könyv neve: " + __classPrivateFieldGet(this, _Book_name, "f") + "Könyv értékelése: " + __classPrivateFieldGet(this, _Book_rating, "f");
+        return "Könyv neve: " + __classPrivateFieldGet(this, _Book_name, "f") + " Könyv értékelése: " + __classPrivateFieldGet(this, _Book_rating, "f");
+    }
+    get name() {
+        return __classPrivateFieldGet(this, _Book_name, "f");
+    }
+    get rateing() {
+        return __classPrivateFieldGet(this, _Book_rating, "f");
     }
 }
 exports.Book = Book;

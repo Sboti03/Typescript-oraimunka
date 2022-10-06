@@ -12,6 +12,14 @@ export class Book {
     }
 
     toString() : string {
-        return "Könyv neve: " + this.#name + "Könyv értékelése: " + this.#rating;
+        return "Könyv neve: " + this.#name + " Könyv értékelése: " + this.#rating;
+    }
+
+    public get name() {
+        return this.#name
+    }
+
+    public get rateing() {
+        return this.#rating
     }
 }
